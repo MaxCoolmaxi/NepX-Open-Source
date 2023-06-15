@@ -32,6 +32,7 @@ local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextLabel_9 = Instance.new("TextLabel")
+local PlayerCounter = Instance.new("TextLabel")
 local OpenButton = Instance.new("ImageButton")
 local UICorner_11 = Instance.new("UICorner")
 
@@ -288,6 +289,17 @@ TextLabel_9.Text = "Tihax"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 
+PlayerCounter.Name = "Player Counter"
+PlayerCounter.Parent = Main
+PlayerCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerCounter.BackgroundTransparency = 1.000
+PlayerCounter.Position = UDim2.new(0.329135031, 0, 0.599635661, 0)
+PlayerCounter.Size = UDim2.new(0.238095239, 0, 0.091407679, 0)
+PlayerCounter.Font = Enum.Font.GothamBold
+PlayerCounter.Text = "Players in server: 0"
+PlayerCounter.TextColor3 = Color3.fromRGB(14, 61, 170)
+PlayerCounter.TextSize = 14.000
+
 OpenButton.Name = "OpenButton"
 OpenButton.Parent = ScreenGui
 OpenButton.BackgroundColor3 = Color3.fromRGB(40, 60, 117)
@@ -302,7 +314,7 @@ UICorner_11.Parent = OpenButton
 
 -- Scripts:
 
-local function QRRE_fake_script() -- ExeButt.LocalScript 
+local function MAZYXB_fake_script() -- ExeButt.LocalScript 
 	local script = Instance.new('LocalScript', ExeButt)
 
 	local button = script.Parent
@@ -311,8 +323,8 @@ local function QRRE_fake_script() -- ExeButt.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(QRRE_fake_script)()
-local function SEUH_fake_script() -- ClearButt.LocalScript 
+coroutine.wrap(MAZYXB_fake_script)()
+local function ZPVNIYN_fake_script() -- ClearButt.LocalScript 
 	local script = Instance.new('LocalScript', ClearButt)
 
 	local button = script.Parent
@@ -321,8 +333,8 @@ local function SEUH_fake_script() -- ClearButt.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(SEUH_fake_script)()
-local function EOZGXS_fake_script() -- Close.LocalScript 
+coroutine.wrap(ZPVNIYN_fake_script)()
+local function LPLFCZ_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local player = game.Players.LocalPlayer
@@ -332,8 +344,8 @@ local function EOZGXS_fake_script() -- Close.LocalScript
 		player.PlayerGui.ScreenGui.OpenButton.Visible = true
 	end)
 end
-coroutine.wrap(EOZGXS_fake_script)()
-local function VJCWJV_fake_script() -- TextBox_2.LocalScript 
+coroutine.wrap(LPLFCZ_fake_script)()
+local function XYWE_fake_script() -- TextBox_2.LocalScript 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	wait(2)
@@ -345,8 +357,8 @@ local function VJCWJV_fake_script() -- TextBox_2.LocalScript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(VJCWJV_fake_script)()
-local function UAUD_fake_script() -- TextBox_3.LocalScript 
+coroutine.wrap(XYWE_fake_script)()
+local function EWHUSN_fake_script() -- TextBox_3.LocalScript 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	wait(2)
@@ -358,15 +370,24 @@ local function UAUD_fake_script() -- TextBox_3.LocalScript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(UAUD_fake_script)()
-local function NNAYNB_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(EWHUSN_fake_script)()
+local function USJWN_fake_script() -- PlayerCounter.LocalScript 
+	local script = Instance.new('LocalScript', PlayerCounter)
+
+	while wait() do
+		script.Parent.Text = "Players In Server: "..#game.Players:GetChildren()
+	end
+	
+end
+coroutine.wrap(USJWN_fake_script)()
+local function HBZMUU_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(NNAYNB_fake_script)()
-local function WYXG_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(HBZMUU_fake_script)()
+local function VBKJFC_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local player = game.Players.LocalPlayer
@@ -376,4 +397,4 @@ local function WYXG_fake_script() -- OpenButton.LocalScript
 		player.PlayerGui.ScreenGui.OpenButton.Visible = false
 	end)
 end
-coroutine.wrap(WYXG_fake_script)()
+coroutine.wrap(VBKJFC_fake_script)()
