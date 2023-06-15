@@ -1,15 +1,3 @@
--- Get the CoreGui and DeltaGui objects
-local coreGui = game:GetService("CoreGui")
-local deltaGui = coreGui:FindFirstChild("DeltaGui")
-
--- Check if DeltaGui exists and delete it if found
-if deltaGui then
-    deltaGui:Destroy()
-    print("DeltaGui has been deleted from CoreGui.")
-else
-    print("DeltaGui was not found in CoreGui.")
-end
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Executor = Instance.new("ImageLabel")
