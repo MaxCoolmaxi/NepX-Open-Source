@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Executor = Instance.new("ImageLabel")
@@ -11,7 +16,6 @@ local ScriptLua1 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Button = Instance.new("ImageLabel")
 local UICorner_6 = Instance.new("UICorner")
 local Home = Instance.new("ImageButton")
@@ -33,6 +37,7 @@ local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextLabel_9 = Instance.new("TextLabel")
 local PlayerCounter = Instance.new("TextLabel")
+local PlayerUser = Instance.new("TextLabel")
 local OpenButton = Instance.new("ImageButton")
 local UICorner_11 = Instance.new("UICorner")
 
@@ -116,8 +121,8 @@ UICorner_4.Parent = ScriptLua1
 Close.Name = "Close"
 Close.Parent = Executor
 Close.BackgroundColor3 = Color3.fromRGB(61, 81, 198)
-Close.Position = UDim2.new(-0.625680804, 0, 0.100689597, 0)
-Close.Size = UDim2.new(0.168883905, 0, 0.221656457, 0)
+Close.Position = UDim2.new(-0.623900294, 0, 0.0870254934, 0)
+Close.Size = UDim2.new(0.166631758, 0, 0.167356715, 0)
 Close.Font = Enum.Font.GothamBold
 Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -126,9 +131,6 @@ Close.TextWrapped = true
 
 UICorner_5.CornerRadius = UDim.new(0, 20)
 UICorner_5.Parent = Close
-
-UIAspectRatioConstraint.Parent = Close
-UIAspectRatioConstraint.AspectRatio = 0.980
 
 Button.Name = "Button"
 Button.Parent = Main
@@ -300,6 +302,19 @@ PlayerCounter.Text = "Players in server: 0"
 PlayerCounter.TextColor3 = Color3.fromRGB(14, 61, 170)
 PlayerCounter.TextSize = 14.000
 
+PlayerUser.Name = "Player User"
+PlayerUser.Parent = Main
+PlayerUser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUser.BackgroundTransparency = 1.000
+PlayerUser.Position = UDim2.new(0.287037045, 0, 0.670932293, 0)
+PlayerUser.Size = UDim2.new(0.321428567, 0, 0.091407679, 0)
+PlayerUser.Font = Enum.Font.GothamBold
+PlayerUser.Text = "Player Name"
+PlayerUser.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerUser.TextScaled = true
+PlayerUser.TextSize = 14.000
+PlayerUser.TextWrapped = true
+
 OpenButton.Name = "OpenButton"
 OpenButton.Parent = ScreenGui
 OpenButton.BackgroundColor3 = Color3.fromRGB(40, 60, 117)
@@ -314,7 +329,7 @@ UICorner_11.Parent = OpenButton
 
 -- Scripts:
 
-local function MAZYXB_fake_script() -- ExeButt.LocalScript 
+local function LLFCAXA_fake_script() -- ExeButt.LocalScript 
 	local script = Instance.new('LocalScript', ExeButt)
 
 	local button = script.Parent
@@ -323,8 +338,8 @@ local function MAZYXB_fake_script() -- ExeButt.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(MAZYXB_fake_script)()
-local function ZPVNIYN_fake_script() -- ClearButt.LocalScript 
+coroutine.wrap(LLFCAXA_fake_script)()
+local function JXQAGEO_fake_script() -- ClearButt.LocalScript 
 	local script = Instance.new('LocalScript', ClearButt)
 
 	local button = script.Parent
@@ -333,8 +348,8 @@ local function ZPVNIYN_fake_script() -- ClearButt.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(ZPVNIYN_fake_script)()
-local function LPLFCZ_fake_script() -- Close.LocalScript 
+coroutine.wrap(JXQAGEO_fake_script)()
+local function CXMYQPQ_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local player = game.Players.LocalPlayer
@@ -344,8 +359,8 @@ local function LPLFCZ_fake_script() -- Close.LocalScript
 		player.PlayerGui.ScreenGui.OpenButton.Visible = true
 	end)
 end
-coroutine.wrap(LPLFCZ_fake_script)()
-local function XYWE_fake_script() -- TextBox_2.LocalScript 
+coroutine.wrap(CXMYQPQ_fake_script)()
+local function UHRC_fake_script() -- TextBox_2.LocalScript 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	wait(2)
@@ -357,8 +372,8 @@ local function XYWE_fake_script() -- TextBox_2.LocalScript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(XYWE_fake_script)()
-local function EWHUSN_fake_script() -- TextBox_3.LocalScript 
+coroutine.wrap(UHRC_fake_script)()
+local function IMHDXJG_fake_script() -- TextBox_3.LocalScript 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	wait(2)
@@ -370,8 +385,8 @@ local function EWHUSN_fake_script() -- TextBox_3.LocalScript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(EWHUSN_fake_script)()
-local function USJWN_fake_script() -- PlayerCounter.LocalScript 
+coroutine.wrap(IMHDXJG_fake_script)()
+local function HYOJ_fake_script() -- PlayerCounter.LocalScript 
 	local script = Instance.new('LocalScript', PlayerCounter)
 
 	while wait() do
@@ -379,15 +394,23 @@ local function USJWN_fake_script() -- PlayerCounter.LocalScript
 	end
 	
 end
-coroutine.wrap(USJWN_fake_script)()
-local function HBZMUU_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(HYOJ_fake_script)()
+local function TAKAWT_fake_script() -- PlayerUser.LocalScript 
+	local script = Instance.new('LocalScript', PlayerUser)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.Text = player.Name
+end
+coroutine.wrap(TAKAWT_fake_script)()
+local function OYBLKU_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(HBZMUU_fake_script)()
-local function VBKJFC_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(OYBLKU_fake_script)()
+local function JBFAN_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local player = game.Players.LocalPlayer
@@ -397,4 +420,4 @@ local function VBKJFC_fake_script() -- OpenButton.LocalScript
 		player.PlayerGui.ScreenGui.OpenButton.Visible = false
 	end)
 end
-coroutine.wrap(VBKJFC_fake_script)()
+coroutine.wrap(JBFAN_fake_script)()
