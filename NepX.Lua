@@ -1,336 +1,170 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Executor = Instance.new("ImageLabel")
+local NepMainGui = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local ExeButt = Instance.new("TextButton")
+local UPDATING = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local ClearButt = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local ScriptLua1 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Button = Instance.new("ImageLabel")
-local UICorner_6 = Instance.new("UICorner")
-local Home = Instance.new("ImageButton")
-local UICorner_7 = Instance.new("UICorner")
-local TextBox_2 = Instance.new("TextBox")
-local UICorner_8 = Instance.new("UICorner")
-local TextBox_3 = Instance.new("TextBox")
-local UICorner_9 = Instance.new("UICorner")
-local Credit = Instance.new("ImageLabel")
-local UICorner_10 = Instance.new("UICorner")
-local CreditsName = Instance.new("ScrollingFrame")
 local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextLabel_8 = Instance.new("TextLabel")
-local TextLabel_9 = Instance.new("TextLabel")
-local PlayerCounter = Instance.new("TextLabel")
-local PlayerUser = Instance.new("TextLabel")
-local OpenButton = Instance.new("ImageButton")
-local UICorner_11 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextBox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local Close = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Main.BackgroundTransparency = 0.300
-Main.Position = UDim2.new(-0.000217013891, 0, -0.0983935893, 0)
-Main.Size = UDim2.new(1, 0, 1.09839356, 0)
+NepMainGui.Name = "NepMainGui"
+NepMainGui.Parent = ScreenGui
+NepMainGui.BackgroundColor3 = Color3.fromRGB(143, 143, 143)
+NepMainGui.BackgroundTransparency = 0.500
+NepMainGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NepMainGui.BorderSizePixel = 3
+NepMainGui.Position = UDim2.new(-0.00132450333, 0, 0.0200803205, 0)
+NepMainGui.Size = UDim2.new(1, 0, 0.985943794, 0)
 
-Executor.Name = "Executor"
-Executor.Parent = Main
-Executor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Executor.Position = UDim2.new(0.631534636, 0, 0.23889339, 0)
-Executor.Size = UDim2.new(0.341341347, 0, 0.546184719, 0)
-Executor.Image = "rbxassetid://13746818512"
+Frame.Parent = NepMainGui
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.19470197, 0, 0.15054521, 0)
+Frame.Size = UDim2.new(0.609271526, 0, 0.698574364, 0)
 
-UICorner.CornerRadius = UDim.new(0, 25)
-UICorner.Parent = Executor
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = Frame
 
-TextBox.Parent = Executor
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.BackgroundTransparency = 1.000
-TextBox.Position = UDim2.new(0.0498533733, 0, 0.264705896, 0)
-TextBox.Size = UDim2.new(0.894428134, 0, 0.466911763, 0)
+UPDATING.Name = "UPDATING--"
+UPDATING.Parent = Frame
+UPDATING.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UPDATING.BackgroundTransparency = 0.500
+UPDATING.Position = UDim2.new(0.0554255247, 0, 0.104786776, 0)
+UPDATING.Size = UDim2.new(0.889130414, 0, 0.787172019, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 20)
+UICorner_2.Parent = UPDATING
+
+TextLabel.Parent = UPDATING
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0440097786, 0, 0.0740740746, 0)
+TextLabel.Size = UDim2.new(0.916870415, 0, 0.203703701, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "@kazuka max Is Updating the UI if you want to execute anything we already make it easier for you just put your script inside the textbox then execute it"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 14
+
+TextBox.Parent = UPDATING
+TextBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextBox.BackgroundTransparency = 0.500
+TextBox.Position = UDim2.new(0.0440097786, 0, 0.285185188, 0)
+TextBox.Size = UDim2.new(0.91198045, 0, 0.433333337, 0)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.GothamBold
 TextBox.MultiLine = true
-TextBox.Text = "print(\"V2.1\")"
+TextBox.Text = "Print(\"sorry for the update, we are gonna make the 2.3\")"
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 14.000
+TextBox.TextSize = 12.000
 TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
-ExeButt.Name = "ExeButt"
-ExeButt.Parent = Executor
-ExeButt.BackgroundColor3 = Color3.fromRGB(22, 31, 62)
-ExeButt.Position = UDim2.new(0.0527859256, 0, 0.753676474, 0)
-ExeButt.Size = UDim2.new(0.425219953, 0, 0.183823526, 0)
-ExeButt.Font = Enum.Font.GothamBold
-ExeButt.Text = "EXECUTE"
-ExeButt.TextColor3 = Color3.fromRGB(95, 122, 163)
-ExeButt.TextSize = 14.000
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = TextBox
 
-UICorner_2.CornerRadius = UDim.new(0, 15)
-UICorner_2.Parent = ExeButt
-
-ClearButt.Name = "ClearButt"
-ClearButt.Parent = Executor
-ClearButt.BackgroundColor3 = Color3.fromRGB(22, 31, 62)
-ClearButt.Position = UDim2.new(0.521994114, 0, 0.753676474, 0)
-ClearButt.Size = UDim2.new(0.425219953, 0, 0.183823526, 0)
-ClearButt.Font = Enum.Font.GothamBold
-ClearButt.Text = "CLEAR"
-ClearButt.TextColor3 = Color3.fromRGB(95, 122, 163)
-ClearButt.TextSize = 14.000
-
-UICorner_3.CornerRadius = UDim.new(0, 15)
-UICorner_3.Parent = ClearButt
-
-ScriptLua1.Name = "ScriptLua1"
-ScriptLua1.Parent = Executor
-ScriptLua1.BackgroundColor3 = Color3.fromRGB(109, 99, 255)
-ScriptLua1.Position = UDim2.new(0.0294302478, 0, 0.0370940417, 0)
-ScriptLua1.Size = UDim2.new(0.322580636, 0, 0.183823526, 0)
-ScriptLua1.Font = Enum.Font.Gotham
-ScriptLua1.Text = "ScriptLua1"
-ScriptLua1.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScriptLua1.TextSize = 14.000
-ScriptLua1.TextWrapped = true
+TextButton.Parent = UPDATING
+TextButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton.BackgroundTransparency = 0.500
+TextButton.Position = UDim2.new(0.0440097786, 0, 0.774074078, 0)
+TextButton.Size = UDim2.new(0.391198039, 0, 0.185185179, 0)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "EXECUTE"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
 UICorner_4.CornerRadius = UDim.new(0, 20)
-UICorner_4.Parent = ScriptLua1
+UICorner_4.Parent = TextButton
+
+UITextSizeConstraint_2.Parent = TextButton
+UITextSizeConstraint_2.MaxTextSize = 14
+
+TextButton_2.Parent = UPDATING
+TextButton_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_2.BackgroundTransparency = 0.500
+TextButton_2.Position = UDim2.new(0.564792216, 0, 0.774074078, 0)
+TextButton_2.Size = UDim2.new(0.391198039, 0, 0.185185179, 0)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "CLEAR"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 20)
+UICorner_5.Parent = TextButton_2
+
+UITextSizeConstraint_3.Parent = TextButton_2
+UITextSizeConstraint_3.MaxTextSize = 14
+
+TextButton_3.Parent = ScreenGui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TextButton_3.BackgroundTransparency = 0.500
+TextButton_3.Position = UDim2.new(0.430463582, 0, 0.44979921, 0)
+TextButton_3.Size = UDim2.new(0.13907285, 0, 0.10040161, 0)
+TextButton_3.Visible = false
+TextButton_3.Font = Enum.Font.GothamBold
+TextButton_3.Text = "OPEN"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 20)
+UICorner_6.Parent = TextButton_3
+
+UITextSizeConstraint_4.Parent = TextButton_3
+UITextSizeConstraint_4.MaxTextSize = 14
 
 Close.Name = "Close"
-Close.Parent = Executor
-Close.BackgroundColor3 = Color3.fromRGB(61, 81, 198)
-Close.Position = UDim2.new(-0.623900294, 0, 0.0870254934, 0)
-Close.Size = UDim2.new(0.166631758, 0, 0.167356715, 0)
+Close.Parent = ScreenGui
+Close.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Close.BackgroundTransparency = 0.500
+Close.Position = UDim2.new(0.663576186, 0, 0.052208852, 0)
+Close.Size = UDim2.new(0.13907285, 0, 0.10040161, 0)
 Close.Font = Enum.Font.GothamBold
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.Text = "CLOSE"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0, 20)
-UICorner_5.Parent = Close
+UICorner_7.CornerRadius = UDim.new(0, 20)
+UICorner_7.Parent = Close
 
-Button.Name = "Button"
-Button.Parent = Main
-Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Button.Position = UDim2.new(0.28497383, 0, 0.396191806, 0)
-Button.Size = UDim2.new(0.325790077, 0, 0.204819277, 0)
-Button.Image = "rbxassetid://13746818512"
-Button.ScaleType = Enum.ScaleType.Crop
-
-UICorner_6.CornerRadius = UDim.new(0, 25)
-UICorner_6.Parent = Button
-
-Home.Name = "Home"
-Home.Parent = Button
-Home.BackgroundColor3 = Color3.fromRGB(10, 34, 88)
-Home.BackgroundTransparency = 0.200
-Home.Position = UDim2.new(0.411764711, 0, 0.287571043, 0)
-Home.Size = UDim2.new(0.181302518, 0, 0.469769776, 0)
-Home.Image = "rbxassetid://5261175692"
-
-UICorner_7.Parent = Home
-
-TextBox_2.Parent = Button
-TextBox_2.BackgroundColor3 = Color3.fromRGB(38, 86, 148)
-TextBox_2.BackgroundTransparency = 0.500
-TextBox_2.Position = UDim2.new(0.052941177, 0, 0.264705896, 0)
-TextBox_2.Size = UDim2.new(0.31764707, 0, 0.490196079, 0)
-TextBox_2.Font = Enum.Font.GothamBold
-TextBox_2.PlaceholderColor3 = Color3.fromRGB(26, 111, 191)
-TextBox_2.PlaceholderText = "Speed"
-TextBox_2.Text = ""
-TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_2.TextSize = 14.000
-
-UICorner_8.Parent = TextBox_2
-
-TextBox_3.Parent = Button
-TextBox_3.BackgroundColor3 = Color3.fromRGB(38, 86, 148)
-TextBox_3.BackgroundTransparency = 0.500
-TextBox_3.Position = UDim2.new(0.632352889, 0, 0.264705896, 0)
-TextBox_3.Size = UDim2.new(0.31764707, 0, 0.490196079, 0)
-TextBox_3.Font = Enum.Font.GothamBold
-TextBox_3.PlaceholderColor3 = Color3.fromRGB(26, 111, 191)
-TextBox_3.PlaceholderText = "Jump"
-TextBox_3.Text = ""
-TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_3.TextSize = 14.000
-TextBox_3.TextWrapped = true
-
-UICorner_9.Parent = TextBox_3
-
-Credit.Name = "Credit"
-Credit.Parent = Main
-Credit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Credit.Position = UDim2.new(0.0273948275, 0, 0.23889339, 0)
-Credit.Size = UDim2.new(0.241241276, 0, 0.546184778, 0)
-Credit.Image = "rbxassetid://13746818512"
-Credit.ScaleType = Enum.ScaleType.Crop
-
-UICorner_10.CornerRadius = UDim.new(0, 25)
-UICorner_10.Parent = Credit
-
-CreditsName.Name = "Credits Name"
-CreditsName.Parent = Credit
-CreditsName.Active = true
-CreditsName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CreditsName.BackgroundTransparency = 1.000
-CreditsName.Position = UDim2.new(0.0788382292, 0, 0.0790061727, 0)
-CreditsName.Size = UDim2.new(0.858921051, 0, 0.845022559, 0)
-
-TextLabel.Parent = CreditsName
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.0809178725, 0, 0.00731390342, 0)
-TextLabel.Size = UDim2.new(0, 180, 0, 50)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "CREDITS"
-TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
-TextLabel.TextSize = 14.000
-
-TextLabel_2.Parent = CreditsName
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(-0.0857487917, 0, 0.0720831975, 0)
-TextLabel_2.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "Kazuka max"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
-
-TextLabel_3.Parent = CreditsName
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(-0.0809178725, 0, 0.156738624, 0)
-TextLabel_3.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_3.Font = Enum.Font.GothamBold
-TextLabel_3.Text = "SkyComboSky"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 14.000
-
-TextLabel_4.Parent = CreditsName
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(-0.0809178725, 0, 0.230592251, 0)
-TextLabel_4.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_4.Font = Enum.Font.GothamBold
-TextLabel_4.Text = "Syctro"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 14.000
-
-TextLabel_5.Parent = CreditsName
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(-0.0745341554, 0, 0.311272025, 0)
-TextLabel_5.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_5.Font = Enum.Font.GothamBold
-TextLabel_5.Text = "Necro"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 14.000
-
-TextLabel_6.Parent = CreditsName
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(-0.0809178725, 0, 0.395474732, 0)
-TextLabel_6.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_6.Font = Enum.Font.GothamBold
-TextLabel_6.Text = "Cluck"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextSize = 14.000
-
-TextLabel_7.Parent = CreditsName
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(-0.0809178725, 0, 0.481351018, 0)
-TextLabel_7.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_7.Font = Enum.Font.GothamBold
-TextLabel_7.Text = "SUPERSONIC"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 14.000
-
-TextLabel_8.Parent = CreditsName
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Position = UDim2.new(-0.0809178725, 0, 0.565509796, 0)
-TextLabel_8.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_8.Font = Enum.Font.GothamBold
-TextLabel_8.Text = "Issak"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 14.000
-
-TextLabel_9.Parent = CreditsName
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(-0.0809178725, 0, 0.651386082, 0)
-TextLabel_9.Size = UDim2.new(0, 180, 0, 50)
-TextLabel_9.Font = Enum.Font.GothamBold
-TextLabel_9.Text = "Tihax"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextSize = 14.000
-
-PlayerCounter.Name = "Player Counter"
-PlayerCounter.Parent = Main
-PlayerCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerCounter.BackgroundTransparency = 1.000
-PlayerCounter.Position = UDim2.new(0.329135031, 0, 0.599635661, 0)
-PlayerCounter.Size = UDim2.new(0.238095239, 0, 0.091407679, 0)
-PlayerCounter.Font = Enum.Font.GothamBold
-PlayerCounter.Text = "Players in server: 0"
-PlayerCounter.TextColor3 = Color3.fromRGB(14, 61, 170)
-PlayerCounter.TextSize = 14.000
-
-PlayerUser.Name = "Player User"
-PlayerUser.Parent = Main
-PlayerUser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerUser.BackgroundTransparency = 1.000
-PlayerUser.Position = UDim2.new(0.287037045, 0, 0.670932293, 0)
-PlayerUser.Size = UDim2.new(0.321428567, 0, 0.091407679, 0)
-PlayerUser.Font = Enum.Font.GothamBold
-PlayerUser.Text = "Player Name"
-PlayerUser.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerUser.TextScaled = true
-PlayerUser.TextSize = 14.000
-PlayerUser.TextWrapped = true
-
-OpenButton.Name = "OpenButton"
-OpenButton.Parent = ScreenGui
-OpenButton.BackgroundColor3 = Color3.fromRGB(40, 60, 117)
-OpenButton.BackgroundTransparency = 0.500
-OpenButton.Position = UDim2.new(0.131131127, 0, 0.0963855386, 0)
-OpenButton.Size = UDim2.new(0, 62, 0, 72)
-OpenButton.Visible = false
-OpenButton.Image = "rbxassetid://5261175692"
-
-UICorner_11.CornerRadius = UDim.new(0, 20)
-UICorner_11.Parent = OpenButton
+UITextSizeConstraint_5.Parent = Close
+UITextSizeConstraint_5.MaxTextSize = 14
 
 -- Scripts:
 
-local function LLFCAXA_fake_script() -- ExeButt.LocalScript 
-	local script = Instance.new('LocalScript', ExeButt)
+local function MHTCO_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
 	local textbox = script.Parent.Parent.TextBox
@@ -338,9 +172,9 @@ local function LLFCAXA_fake_script() -- ExeButt.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(LLFCAXA_fake_script)()
-local function JXQAGEO_fake_script() -- ClearButt.LocalScript 
-	local script = Instance.new('LocalScript', ClearButt)
+coroutine.wrap(MHTCO_fake_script)()
+local function ZBSGA_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
 	local textbox = script.Parent.Parent.TextBox
@@ -348,76 +182,71 @@ local function JXQAGEO_fake_script() -- ClearButt.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(JXQAGEO_fake_script)()
-local function CXMYQPQ_fake_script() -- Close.LocalScript 
+coroutine.wrap(ZBSGA_fake_script)()
+local function RWBIWHM_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(RWBIWHM_fake_script)()
+local function SQAEX_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.ScreenGui.TextButton.Visible = false
+	end)
+end
+coroutine.wrap(SQAEX_fake_script)()
+local function HFGIF_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local frame = script.Parent.Parent.Close
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame.Visible = true
+	end)
+end
+coroutine.wrap(HFGIF_fake_script)()
+local function IIMXM_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.ScreenGui.NepMainGui.Visible = true
+	end)
+end
+coroutine.wrap(IIMXM_fake_script)()
+local function MWAAU_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		player.PlayerGui.ScreenGui.Main.Visible = false
-		player.PlayerGui.ScreenGui.OpenButton.Visible = true
+		player.PlayerGui.ScreenGui.Close.Visible = false
 	end)
 end
-coroutine.wrap(CXMYQPQ_fake_script)()
-local function UHRC_fake_script() -- TextBox_2.LocalScript 
-	local script = Instance.new('LocalScript', TextBox_2)
+coroutine.wrap(MWAAU_fake_script)()
+local function OGVMJVQ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
 
-	wait(2)
-	local plr = game.Players.LocalPlayer
-	local char = plr.Character
-	local hum = char:WaitForChild("Humanoid")
-	
-	script.Parent.Changed:Connect(function()
-		hum.WalkSpeed = script.Parent.Text
-	end)
-end
-coroutine.wrap(UHRC_fake_script)()
-local function IMHDXJG_fake_script() -- TextBox_3.LocalScript 
-	local script = Instance.new('LocalScript', TextBox_3)
-
-	wait(2)
-	local plr = game.Players.LocalPlayer
-	local char = plr.Character
-	local hum = char:WaitForChild("Humanoid")
-	
-	script.Parent.Changed:Connect(function()
-		hum.WalkSpeed = script.Parent.Text
-	end)
-end
-coroutine.wrap(IMHDXJG_fake_script)()
-local function HYOJ_fake_script() -- PlayerCounter.LocalScript 
-	local script = Instance.new('LocalScript', PlayerCounter)
-
-	while wait() do
-		script.Parent.Text = "Players In Server: "..#game.Players:GetChildren()
-	end
-	
-end
-coroutine.wrap(HYOJ_fake_script)()
-local function TAKAWT_fake_script() -- PlayerUser.LocalScript 
-	local script = Instance.new('LocalScript', PlayerUser)
-
-	local player = game.Players.LocalPlayer
-	
-	script.Parent.Text = player.Name
-end
-coroutine.wrap(TAKAWT_fake_script)()
-local function OYBLKU_fake_script() -- OpenButton.LocalScript 
-	local script = Instance.new('LocalScript', OpenButton)
-
-	script.Parent.Draggable = true
-	script.Parent.Active = true
-end
-coroutine.wrap(OYBLKU_fake_script)()
-local function JBFAN_fake_script() -- OpenButton.LocalScript 
-	local script = Instance.new('LocalScript', OpenButton)
-
-	local player = game.Players.LocalPlayer
+	local frame = script.Parent.Parent.TextButton
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		player.PlayerGui.ScreenGui.Main.Visible = true
-		player.PlayerGui.ScreenGui.OpenButton.Visible = false
+		frame.Visible = true
 	end)
 end
-coroutine.wrap(JBFAN_fake_script)()
+coroutine.wrap(OGVMJVQ_fake_script)()
+local function AVZL_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local frame = script.Parent.Parent.NepMainGui
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame.Visible = false
+	end)
+end
+coroutine.wrap(AVZL_fake_script)()
