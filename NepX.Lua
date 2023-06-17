@@ -66,7 +66,7 @@ NepGui.ResetOnSpawn = false
 TextButton.Parent = NepGui
 TextButton.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
 TextButton.BackgroundTransparency = 0.500
-TextButton.Position = UDim2.new(0.430463582, 0, 0.44979921, 0)
+TextButton.Position = UDim2.new(0.0346048921, 0, 0.0151053276, 0)
 TextButton.Size = UDim2.new(0.13907285, 0, 0.10040161, 0)
 TextButton.Font = Enum.Font.GothamBold
 TextButton.Text = "OPEN"
@@ -85,7 +85,7 @@ Main.Name = "Main"
 Main.Parent = NepGui
 Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Main.BackgroundTransparency = 0.500
-Main.Position = UDim2.new(0.194595456, 0, 0.11737825, 0)
+Main.Position = UDim2.new(0.194595456, 0, 0.0786027387, 0)
 Main.Size = UDim2.new(0.609271526, 0, 0.761839688, 0)
 Main.Visible = false
 
@@ -386,14 +386,14 @@ UITextSizeConstraint_14.MaxTextSize = 14
 
 -- Scripts:
 
-local function QKJA_fake_script() -- TextButton.LocalScript 
+local function YPDE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(QKJA_fake_script)()
-local function NFUJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YPDE_fake_script)()
+local function GGNT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local player = game.Players.LocalPlayer
@@ -402,8 +402,8 @@ local function NFUJ_fake_script() -- TextButton.LocalScript
 		player.PlayerGui.NepGui.TextButton.Visible = false
 	end)
 end
-coroutine.wrap(NFUJ_fake_script)()
-local function SECPXCB_fake_script() -- TextButton.Script 
+coroutine.wrap(GGNT_fake_script)()
+local function OUIEIW_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	function click()
@@ -411,7 +411,7 @@ local function SECPXCB_fake_script() -- TextButton.Script
 		script.Parent.Parent.Main.Visible = true
 		script.Parent.Parent.Main:TweenPosition(
 			
-			UDim2.new(0.195, 0,0.119, 0),
+			UDim2.new(0.195, 0,0.079, 0),
 			"InOut",
 			"Quad",
 			1,
@@ -423,8 +423,8 @@ local function SECPXCB_fake_script() -- TextButton.Script
 	end
 	script.Parent.MouseButton1Click:Connect(click)
 end
-coroutine.wrap(SECPXCB_fake_script)()
-local function KRRS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(OUIEIW_fake_script)()
+local function VMRRN_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -433,8 +433,8 @@ local function KRRS_fake_script() -- TextButton_2.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(KRRS_fake_script)()
-local function EVYV_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(VMRRN_fake_script)()
+local function EZUP_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -443,24 +443,24 @@ local function EVYV_fake_script() -- TextButton_3.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(EVYV_fake_script)()
-local function AHRNX_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(EZUP_fake_script)()
+local function ZKBZF_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.Text = player.Name
 end
-coroutine.wrap(AHRNX_fake_script)()
-local function YZHIWHN_fake_script() -- PlayerCounter.LocalScript 
+coroutine.wrap(ZKBZF_fake_script)()
+local function CJSFAM_fake_script() -- PlayerCounter.LocalScript 
 	local script = Instance.new('LocalScript', PlayerCounter)
 
 	while wait() do
 		script.Parent.Text = "Players In Server: "..#game.Players:GetChildren()
 	end
 end
-coroutine.wrap(YZHIWHN_fake_script)()
-local function SWQTL_fake_script() -- Setting.LocalScript 
+coroutine.wrap(CJSFAM_fake_script)()
+local function FZDIBYX_fake_script() -- Setting.LocalScript 
 	local script = Instance.new('LocalScript', Setting)
 
 	local player = game.Players.LocalPlayer
@@ -470,8 +470,8 @@ local function SWQTL_fake_script() -- Setting.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = false
 	end)
 end
-coroutine.wrap(SWQTL_fake_script)()
-local function VUNWX_fake_script() -- Close.LocalScript 
+coroutine.wrap(FZDIBYX_fake_script)()
+local function GDTEH_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local player = game.Players.LocalPlayer
@@ -481,8 +481,8 @@ local function VUNWX_fake_script() -- Close.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = true
 	end)
 end
-coroutine.wrap(VUNWX_fake_script)()
-local function MZVIWZ_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(GDTEH_fake_script)()
+local function ZQHL_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local player = game.Players.LocalPlayer
@@ -491,8 +491,8 @@ local function MZVIWZ_fake_script() -- Close_2.LocalScript
 		player.PlayerGui.NepGui.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(MZVIWZ_fake_script)()
-local function HGTF_fake_script() -- Close_2.Script 
+coroutine.wrap(ZQHL_fake_script)()
+local function CXDCP_fake_script() -- Close_2.Script 
 	local script = Instance.new('Script', Close_2)
 
 	function click()
@@ -514,11 +514,11 @@ local function HGTF_fake_script() -- Close_2.Script
 	end
 	script.Parent.MouseButton1Click:Connect(click)
 end
-coroutine.wrap(HGTF_fake_script)()
-local function TZSI_fake_script() -- Main.LocalScript 
+coroutine.wrap(CXDCP_fake_script)()
+local function VRYDUR_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(TZSI_fake_script)()
+coroutine.wrap(VRYDUR_fake_script)()
