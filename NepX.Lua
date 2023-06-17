@@ -19,63 +19,66 @@ local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local TextButton_3 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
-local PlayerName = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
-local PlayerCounter = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local PlayerCounter = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local Setting = Instance.new("ImageButton")
 local Credits = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
-local PlayerName_2 = Instance.new("TextLabel")
 local UICorner_10 = Instance.new("UICorner")
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
-local PlayerName_3 = Instance.new("TextLabel")
+local PlayerName_2 = Instance.new("TextLabel")
 local UICorner_11 = Instance.new("UICorner")
 local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
-local PlayerName_4 = Instance.new("TextLabel")
+local PlayerName_3 = Instance.new("TextLabel")
 local UICorner_12 = Instance.new("UICorner")
 local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
-local PlayerName_5 = Instance.new("TextLabel")
+local PlayerName_4 = Instance.new("TextLabel")
 local UICorner_13 = Instance.new("UICorner")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
-local PlayerName_6 = Instance.new("TextLabel")
+local PlayerName_5 = Instance.new("TextLabel")
 local UICorner_14 = Instance.new("UICorner")
 local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
-local PlayerName_7 = Instance.new("TextLabel")
+local PlayerName_6 = Instance.new("TextLabel")
 local UICorner_15 = Instance.new("UICorner")
 local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
-local PlayerName_8 = Instance.new("TextLabel")
+local PlayerName_7 = Instance.new("TextLabel")
 local UICorner_16 = Instance.new("UICorner")
 local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
-local Close = Instance.new("TextButton")
+local PlayerName_8 = Instance.new("TextLabel")
 local UICorner_17 = Instance.new("UICorner")
 local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
-local Close_2 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
 local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
-local ScriptHub = Instance.new("Frame")
+local Close_2 = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
-local Heading = Instance.new("TextLabel")
-local UICorner_20 = Instance.new("UICorner")
 local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
-local SF = Instance.new("ScrollingFrame")
-local Script = Instance.new("TextButton")
+local ScriptHub = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Heading = Instance.new("TextLabel")
 local UICorner_21 = Instance.new("UICorner")
 local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
-local Script_2 = Instance.new("TextButton")
+local SF = Instance.new("ScrollingFrame")
+local Script = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
-local Close_3 = Instance.new("TextButton")
+local Script_2 = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
 local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
-local Chillz = Instance.new("TextLabel")
+local Close_3 = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
 local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
-local ScriptBlox = Instance.new("TextButton")
+local Chillz = Instance.new("TextLabel")
 local UICorner_25 = Instance.new("UICorner")
 local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local ScriptBlox = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -119,7 +122,6 @@ UPDATING.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 UPDATING.BackgroundTransparency = 0.500
 UPDATING.Position = UDim2.new(0.0445559286, 0, 0.14245753, 0)
 UPDATING.Size = UDim2.new(0.908695638, 0, 0.78717196, 0)
-UPDATING.Visible = false
 
 UICorner_3.CornerRadius = UDim.new(0, 20)
 UICorner_3.Parent = UPDATING
@@ -145,8 +147,8 @@ UICorner_4.Parent = TextBox
 TextButton_2.Parent = UPDATING
 TextButton_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 TextButton_2.BackgroundTransparency = 0.500
-TextButton_2.Position = UDim2.new(0.0440097786, 0, 0.774074078, 0)
-TextButton_2.Size = UDim2.new(0.391198039, 0, 0.185185179, 0)
+TextButton_2.Position = UDim2.new(0.0440097898, 0, 0.774074137, 0)
+TextButton_2.Size = UDim2.new(0.289996922, 0, 0.185185179, 0)
 TextButton_2.Font = Enum.Font.GothamBold
 TextButton_2.Text = "EXECUTE"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -163,8 +165,8 @@ UITextSizeConstraint_2.MaxTextSize = 14
 TextButton_3.Parent = UPDATING
 TextButton_3.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 TextButton_3.BackgroundTransparency = 0.500
-TextButton_3.Position = UDim2.new(0.564792216, 0, 0.774074078, 0)
-TextButton_3.Size = UDim2.new(0.391198039, 0, 0.185185179, 0)
+TextButton_3.Position = UDim2.new(0.362389982, 0, 0.774074137, 0)
+TextButton_3.Size = UDim2.new(0.278996795, 0, 0.185185179, 0)
 TextButton_3.Font = Enum.Font.GothamBold
 TextButton_3.Text = "CLEAR"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -177,6 +179,24 @@ UICorner_6.Parent = TextButton_3
 
 UITextSizeConstraint_3.Parent = TextButton_3
 UITextSizeConstraint_3.MaxTextSize = 14
+
+TextButton_4.Parent = UPDATING
+TextButton_4.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_4.BackgroundTransparency = 0.500
+TextButton_4.Position = UDim2.new(0.674793482, 0, 0.774074137, 0)
+TextButton_4.Size = UDim2.new(0.278996795, 0, 0.185185179, 0)
+TextButton_4.Font = Enum.Font.GothamBold
+TextButton_4.Text = "Find Scripts"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 20)
+UICorner_7.Parent = TextButton_4
+
+UITextSizeConstraint_4.Parent = TextButton_4
+UITextSizeConstraint_4.MaxTextSize = 14
 
 PlayerName.Name = "PlayerName"
 PlayerName.Parent = Main
@@ -191,11 +211,11 @@ PlayerName.TextScaled = true
 PlayerName.TextSize = 14.000
 PlayerName.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 10)
-UICorner_7.Parent = PlayerName
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = PlayerName
 
-UITextSizeConstraint_4.Parent = PlayerName
-UITextSizeConstraint_4.MaxTextSize = 14
+UITextSizeConstraint_5.Parent = PlayerName
+UITextSizeConstraint_5.MaxTextSize = 14
 
 PlayerCounter.Name = "PlayerCounter"
 PlayerCounter.Parent = Main
@@ -210,11 +230,11 @@ PlayerCounter.TextScaled = true
 PlayerCounter.TextSize = 14.000
 PlayerCounter.TextWrapped = true
 
-UICorner_8.CornerRadius = UDim.new(0, 10)
-UICorner_8.Parent = PlayerCounter
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = PlayerCounter
 
-UITextSizeConstraint_5.Parent = PlayerCounter
-UITextSizeConstraint_5.MaxTextSize = 14
+UITextSizeConstraint_6.Parent = PlayerCounter
+UITextSizeConstraint_6.MaxTextSize = 14
 
 Setting.Name = "Setting"
 Setting.Parent = Main
@@ -232,8 +252,8 @@ Credits.Position = UDim2.new(0.0445559286, 0, 0.14245753, 0)
 Credits.Size = UDim2.new(0.908695638, 0, 0.78717196, 0)
 Credits.Visible = false
 
-UICorner_9.CornerRadius = UDim.new(0, 20)
-UICorner_9.Parent = Credits
+UICorner_10.CornerRadius = UDim.new(0, 20)
+UICorner_10.Parent = Credits
 
 PlayerName_2.Name = "PlayerName"
 PlayerName_2.Parent = Credits
@@ -248,11 +268,11 @@ PlayerName_2.TextScaled = true
 PlayerName_2.TextSize = 14.000
 PlayerName_2.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0, 10)
-UICorner_10.Parent = PlayerName_2
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = PlayerName_2
 
-UITextSizeConstraint_6.Parent = PlayerName_2
-UITextSizeConstraint_6.MaxTextSize = 14
+UITextSizeConstraint_7.Parent = PlayerName_2
+UITextSizeConstraint_7.MaxTextSize = 14
 
 PlayerName_3.Name = "PlayerName"
 PlayerName_3.Parent = Credits
@@ -267,11 +287,11 @@ PlayerName_3.TextScaled = true
 PlayerName_3.TextSize = 14.000
 PlayerName_3.TextWrapped = true
 
-UICorner_11.CornerRadius = UDim.new(0, 10)
-UICorner_11.Parent = PlayerName_3
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = PlayerName_3
 
-UITextSizeConstraint_7.Parent = PlayerName_3
-UITextSizeConstraint_7.MaxTextSize = 14
+UITextSizeConstraint_8.Parent = PlayerName_3
+UITextSizeConstraint_8.MaxTextSize = 14
 
 PlayerName_4.Name = "PlayerName"
 PlayerName_4.Parent = Credits
@@ -286,11 +306,11 @@ PlayerName_4.TextScaled = true
 PlayerName_4.TextSize = 14.000
 PlayerName_4.TextWrapped = true
 
-UICorner_12.CornerRadius = UDim.new(0, 10)
-UICorner_12.Parent = PlayerName_4
+UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.Parent = PlayerName_4
 
-UITextSizeConstraint_8.Parent = PlayerName_4
-UITextSizeConstraint_8.MaxTextSize = 14
+UITextSizeConstraint_9.Parent = PlayerName_4
+UITextSizeConstraint_9.MaxTextSize = 14
 
 PlayerName_5.Name = "PlayerName"
 PlayerName_5.Parent = Credits
@@ -305,11 +325,11 @@ PlayerName_5.TextScaled = true
 PlayerName_5.TextSize = 14.000
 PlayerName_5.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 10)
-UICorner_13.Parent = PlayerName_5
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = PlayerName_5
 
-UITextSizeConstraint_9.Parent = PlayerName_5
-UITextSizeConstraint_9.MaxTextSize = 14
+UITextSizeConstraint_10.Parent = PlayerName_5
+UITextSizeConstraint_10.MaxTextSize = 14
 
 PlayerName_6.Name = "PlayerName"
 PlayerName_6.Parent = Credits
@@ -324,11 +344,11 @@ PlayerName_6.TextScaled = true
 PlayerName_6.TextSize = 14.000
 PlayerName_6.TextWrapped = true
 
-UICorner_14.CornerRadius = UDim.new(0, 10)
-UICorner_14.Parent = PlayerName_6
+UICorner_15.CornerRadius = UDim.new(0, 10)
+UICorner_15.Parent = PlayerName_6
 
-UITextSizeConstraint_10.Parent = PlayerName_6
-UITextSizeConstraint_10.MaxTextSize = 14
+UITextSizeConstraint_11.Parent = PlayerName_6
+UITextSizeConstraint_11.MaxTextSize = 14
 
 PlayerName_7.Name = "PlayerName"
 PlayerName_7.Parent = Credits
@@ -343,11 +363,11 @@ PlayerName_7.TextScaled = true
 PlayerName_7.TextSize = 14.000
 PlayerName_7.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 10)
-UICorner_15.Parent = PlayerName_7
+UICorner_16.CornerRadius = UDim.new(0, 10)
+UICorner_16.Parent = PlayerName_7
 
-UITextSizeConstraint_11.Parent = PlayerName_7
-UITextSizeConstraint_11.MaxTextSize = 14
+UITextSizeConstraint_12.Parent = PlayerName_7
+UITextSizeConstraint_12.MaxTextSize = 14
 
 PlayerName_8.Name = "PlayerName"
 PlayerName_8.Parent = Credits
@@ -362,11 +382,11 @@ PlayerName_8.TextScaled = true
 PlayerName_8.TextSize = 14.000
 PlayerName_8.TextWrapped = true
 
-UICorner_16.CornerRadius = UDim.new(0, 10)
-UICorner_16.Parent = PlayerName_8
+UICorner_17.CornerRadius = UDim.new(0, 10)
+UICorner_17.Parent = PlayerName_8
 
-UITextSizeConstraint_12.Parent = PlayerName_8
-UITextSizeConstraint_12.MaxTextSize = 14
+UITextSizeConstraint_13.Parent = PlayerName_8
+UITextSizeConstraint_13.MaxTextSize = 14
 
 Close.Name = "Close"
 Close.Parent = Credits
@@ -381,11 +401,11 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(0, 20)
-UICorner_17.Parent = Close
+UICorner_18.CornerRadius = UDim.new(0, 20)
+UICorner_18.Parent = Close
 
-UITextSizeConstraint_13.Parent = Close
-UITextSizeConstraint_13.MaxTextSize = 14
+UITextSizeConstraint_14.Parent = Close
+UITextSizeConstraint_14.MaxTextSize = 14
 
 Close_2.Name = "Close"
 Close_2.Parent = Main
@@ -400,11 +420,11 @@ Close_2.TextScaled = true
 Close_2.TextSize = 14.000
 Close_2.TextWrapped = true
 
-UICorner_18.CornerRadius = UDim.new(0, 20)
-UICorner_18.Parent = Close_2
+UICorner_19.CornerRadius = UDim.new(0, 20)
+UICorner_19.Parent = Close_2
 
-UITextSizeConstraint_14.Parent = Close_2
-UITextSizeConstraint_14.MaxTextSize = 14
+UITextSizeConstraint_15.Parent = Close_2
+UITextSizeConstraint_15.MaxTextSize = 14
 
 ScriptHub.Name = "ScriptHub"
 ScriptHub.Parent = Main
@@ -412,9 +432,10 @@ ScriptHub.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 ScriptHub.BackgroundTransparency = 0.500
 ScriptHub.Position = UDim2.new(0.0465550832, 0, 0.147698537, 0)
 ScriptHub.Size = UDim2.new(0.908695638, 0, 0.78717196, 0)
+ScriptHub.Visible = false
 
-UICorner_19.CornerRadius = UDim.new(0, 20)
-UICorner_19.Parent = ScriptHub
+UICorner_20.CornerRadius = UDim.new(0, 20)
+UICorner_20.Parent = ScriptHub
 
 Heading.Name = "Heading"
 Heading.Parent = ScriptHub
@@ -423,17 +444,17 @@ Heading.BackgroundTransparency = 0.500
 Heading.Position = UDim2.new(0.0291242115, 0, 0.0455658771, 0)
 Heading.Size = UDim2.new(0.94112736, 0, 0.0784281567, 0)
 Heading.Font = Enum.Font.GothamBold
-Heading.Text = "ScriptHub | script in the page: 10"
+Heading.Text = "ScriptHub | script in the page: 3"
 Heading.TextColor3 = Color3.fromRGB(146, 148, 255)
 Heading.TextScaled = true
 Heading.TextSize = 14.000
 Heading.TextWrapped = true
 
-UICorner_20.CornerRadius = UDim.new(0, 10)
-UICorner_20.Parent = Heading
+UICorner_21.CornerRadius = UDim.new(0, 10)
+UICorner_21.Parent = Heading
 
-UITextSizeConstraint_15.Parent = Heading
-UITextSizeConstraint_15.MaxTextSize = 14
+UITextSizeConstraint_16.Parent = Heading
+UITextSizeConstraint_16.MaxTextSize = 14
 
 SF.Name = "SF"
 SF.Parent = ScriptHub
@@ -454,11 +475,11 @@ Script.TextColor3 = Color3.fromRGB(255, 255, 255)
 Script.TextSize = 14.000
 Script.TextWrapped = true
 
-UICorner_21.CornerRadius = UDim.new(0, 20)
-UICorner_21.Parent = Script
+UICorner_22.CornerRadius = UDim.new(0, 20)
+UICorner_22.Parent = Script
 
-UITextSizeConstraint_16.Parent = Script
-UITextSizeConstraint_16.MaxTextSize = 14
+UITextSizeConstraint_17.Parent = Script
+UITextSizeConstraint_17.MaxTextSize = 14
 
 Script_2.Name = "Script"
 Script_2.Parent = SF
@@ -472,11 +493,11 @@ Script_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Script_2.TextSize = 14.000
 Script_2.TextWrapped = true
 
-UICorner_22.CornerRadius = UDim.new(0, 20)
-UICorner_22.Parent = Script_2
+UICorner_23.CornerRadius = UDim.new(0, 20)
+UICorner_23.Parent = Script_2
 
-UITextSizeConstraint_17.Parent = Script_2
-UITextSizeConstraint_17.MaxTextSize = 14
+UITextSizeConstraint_18.Parent = Script_2
+UITextSizeConstraint_18.MaxTextSize = 14
 
 Close_3.Name = "Close"
 Close_3.Parent = ScriptHub
@@ -490,11 +511,11 @@ Close_3.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close_3.TextSize = 14.000
 Close_3.TextWrapped = true
 
-UICorner_23.CornerRadius = UDim.new(0, 20)
-UICorner_23.Parent = Close_3
+UICorner_24.CornerRadius = UDim.new(0, 20)
+UICorner_24.Parent = Close_3
 
-UITextSizeConstraint_18.Parent = Close_3
-UITextSizeConstraint_18.MaxTextSize = 14
+UITextSizeConstraint_19.Parent = Close_3
+UITextSizeConstraint_19.MaxTextSize = 14
 
 Chillz.Name = "Chillz"
 Chillz.Parent = ScriptHub
@@ -509,39 +530,39 @@ Chillz.TextScaled = true
 Chillz.TextSize = 14.000
 Chillz.TextWrapped = true
 
-UICorner_24.CornerRadius = UDim.new(0, 10)
-UICorner_24.Parent = Chillz
+UICorner_25.CornerRadius = UDim.new(0, 10)
+UICorner_25.Parent = Chillz
 
-UITextSizeConstraint_19.Parent = Chillz
-UITextSizeConstraint_19.MaxTextSize = 14
+UITextSizeConstraint_20.Parent = Chillz
+UITextSizeConstraint_20.MaxTextSize = 14
 
 ScriptBlox.Name = "ScriptBlox"
 ScriptBlox.Parent = ScriptHub
 ScriptBlox.BackgroundColor3 = Color3.fromRGB(76, 83, 2)
 ScriptBlox.BackgroundTransparency = 0.500
 ScriptBlox.Position = UDim2.new(0.554406166, 0, 0.506008983, 0)
-ScriptBlox.Size = UDim2.new(0, 164, 0, 29)
+ScriptBlox.Size = UDim2.new(0.360804021, 0, 0.0965411812, 0)
 ScriptBlox.Font = Enum.Font.GothamBold
 ScriptBlox.Text = "ScriptBlox Hub"
 ScriptBlox.TextColor3 = Color3.fromRGB(240, 253, 0)
 ScriptBlox.TextSize = 14.000
 
-UICorner_25.CornerRadius = UDim.new(0, 20)
-UICorner_25.Parent = ScriptBlox
+UICorner_26.CornerRadius = UDim.new(0, 20)
+UICorner_26.Parent = ScriptBlox
 
-UITextSizeConstraint_20.Parent = ScriptBlox
-UITextSizeConstraint_20.MaxTextSize = 14
+UITextSizeConstraint_21.Parent = ScriptBlox
+UITextSizeConstraint_21.MaxTextSize = 14
 
 -- Scripts:
 
-local function PTFGY_fake_script() -- TextButton.LocalScript 
+local function EFYP_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(PTFGY_fake_script)()
-local function OOELJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(EFYP_fake_script)()
+local function CVHGX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local player = game.Players.LocalPlayer
@@ -550,8 +571,8 @@ local function OOELJ_fake_script() -- TextButton.LocalScript
 		player.PlayerGui.NepGui.TextButton.Visible = false
 	end)
 end
-coroutine.wrap(OOELJ_fake_script)()
-local function HVDFDPW_fake_script() -- TextButton.Script 
+coroutine.wrap(CVHGX_fake_script)()
+local function PLEALZQ_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	function click()
@@ -571,8 +592,8 @@ local function HVDFDPW_fake_script() -- TextButton.Script
 	end
 	script.Parent.MouseButton1Click:Connect(click)
 end
-coroutine.wrap(HVDFDPW_fake_script)()
-local function NVXUQAX_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(PLEALZQ_fake_script)()
+local function IPLD_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -581,8 +602,8 @@ local function NVXUQAX_fake_script() -- TextButton_2.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(NVXUQAX_fake_script)()
-local function WKCC_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(IPLD_fake_script)()
+local function JYVPPQ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -591,24 +612,36 @@ local function WKCC_fake_script() -- TextButton_3.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(WKCC_fake_script)()
-local function TGEL_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(JYVPPQ_fake_script)()
+local function YUBQ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.NepGui.Main.ScriptHub.Visible = true
+		player.PlayerGui.NepGui.Main.Credits.Visible = false
+		player.PlayerGui.NepGui.Main.UPDATING.Visible = false
+	end)
+end
+coroutine.wrap(YUBQ_fake_script)()
+local function BTYFCTP_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.Text = player.Name
 end
-coroutine.wrap(TGEL_fake_script)()
-local function XOQUWQC_fake_script() -- PlayerCounter.LocalScript 
+coroutine.wrap(BTYFCTP_fake_script)()
+local function AGHXRSJ_fake_script() -- PlayerCounter.LocalScript 
 	local script = Instance.new('LocalScript', PlayerCounter)
 
 	while wait() do
 		script.Parent.Text = "Players In Server: "..#game.Players:GetChildren()
 	end
 end
-coroutine.wrap(XOQUWQC_fake_script)()
-local function JNMRGL_fake_script() -- Setting.LocalScript 
+coroutine.wrap(AGHXRSJ_fake_script)()
+local function RTEKV_fake_script() -- Setting.LocalScript 
 	local script = Instance.new('LocalScript', Setting)
 
 	local player = game.Players.LocalPlayer
@@ -618,8 +651,8 @@ local function JNMRGL_fake_script() -- Setting.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = false
 	end)
 end
-coroutine.wrap(JNMRGL_fake_script)()
-local function HLND_fake_script() -- Close.LocalScript 
+coroutine.wrap(RTEKV_fake_script)()
+local function ZXBVZC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local player = game.Players.LocalPlayer
@@ -629,8 +662,8 @@ local function HLND_fake_script() -- Close.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = true
 	end)
 end
-coroutine.wrap(HLND_fake_script)()
-local function WSHD_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(ZXBVZC_fake_script)()
+local function ZAHB_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local player = game.Players.LocalPlayer
@@ -639,8 +672,8 @@ local function WSHD_fake_script() -- Close_2.LocalScript
 		player.PlayerGui.NepGui.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(WSHD_fake_script)()
-local function UPESQMA_fake_script() -- Close_2.Script 
+coroutine.wrap(ZAHB_fake_script)()
+local function WSKPK_fake_script() -- Close_2.Script 
 	local script = Instance.new('Script', Close_2)
 
 	function click()
@@ -662,15 +695,15 @@ local function UPESQMA_fake_script() -- Close_2.Script
 	end
 	script.Parent.MouseButton1Click:Connect(click)
 end
-coroutine.wrap(UPESQMA_fake_script)()
-local function AFKJU_fake_script() -- Main.LocalScript 
+coroutine.wrap(WSKPK_fake_script)()
+local function ZQUZ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(AFKJU_fake_script)()
-local function VGMMZJV_fake_script() -- Script.LocalScript 
+coroutine.wrap(ZQUZ_fake_script)()
+local function BFFWEL_fake_script() -- Script.LocalScript 
 	local script = Instance.new('LocalScript', Script)
 
 	local button = script.Parent
@@ -678,8 +711,8 @@ local function VGMMZJV_fake_script() -- Script.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(VGMMZJV_fake_script)()
-local function EZKYYP_fake_script() -- Script_2.LocalScript 
+coroutine.wrap(BFFWEL_fake_script)()
+local function BHYRB_fake_script() -- Script_2.LocalScript 
 	local script = Instance.new('LocalScript', Script_2)
 
 	local button = script.Parent
@@ -687,24 +720,25 @@ local function EZKYYP_fake_script() -- Script_2.LocalScript
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
 	end)
 end
-coroutine.wrap(EZKYYP_fake_script)()
-local function BCYCP_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(BHYRB_fake_script)()
+local function KBKQVV_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.NepGui.Main.ScriptHub.Visible = false
 		player.PlayerGui.NepGui.Main.Credits.Visible = false
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = true
 	end)
 end
-coroutine.wrap(BCYCP_fake_script)()
-local function INGMQA_fake_script() -- ScriptBlox.LocalScript 
+coroutine.wrap(KBKQVV_fake_script)()
+local function VTYNAB_fake_script() -- ScriptBlox.LocalScript 
 	local script = Instance.new('LocalScript', ScriptBlox)
 
 	local button = script.Parent
 	button.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()	
 	end)
 end
-coroutine.wrap(INGMQA_fake_script)()
+coroutine.wrap(VTYNAB_fake_script)()
