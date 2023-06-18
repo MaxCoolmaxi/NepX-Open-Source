@@ -110,8 +110,8 @@ Main.Name = "Main"
 Main.Parent = NepGui
 Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Main.BackgroundTransparency = 0.500
-Main.Position = UDim2.new(0.194595471, 0, 0.0616535768, 0)
-Main.Size = UDim2.new(0.609271526, 0, 0.778788865, 0)
+Main.Position = UDim2.new(0.194595471, 0, 0.0677759871, 0)
+Main.Size = UDim2.new(0.609271526, 0, 0.809401095, 0)
 
 UICorner_2.CornerRadius = UDim.new(0, 20)
 UICorner_2.Parent = Main
@@ -240,8 +240,8 @@ Setting.Name = "Setting"
 Setting.Parent = Main
 Setting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Setting.BackgroundTransparency = 1.000
-Setting.Position = UDim2.new(0.868516684, 0, 0.0220657289, 0)
-Setting.Size = UDim2.new(0.08165811, 0, 0.107558616, 0)
+Setting.Position = UDim2.new(0.868516684, 0, -0.00566957984, 0)
+Setting.Size = UDim2.new(0.08165811, 0, 0.157986447, 0)
 Setting.Image = "http://www.roblox.com/asset/?id=6031280882"
 
 Credits.Name = "Credits"
@@ -555,14 +555,14 @@ UITextSizeConstraint_21.MaxTextSize = 14
 
 -- Scripts:
 
-local function ABSRG_fake_script() -- TextButton.LocalScript 
+local function TXESYG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(ABSRG_fake_script)()
-local function CTTKP_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(TXESYG_fake_script)()
+local function GWDPHS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local player = game.Players.LocalPlayer
@@ -571,8 +571,8 @@ local function CTTKP_fake_script() -- TextButton.LocalScript
 		player.PlayerGui.NepGui.TextButton.Visible = false
 	end)
 end
-coroutine.wrap(CTTKP_fake_script)()
-local function VDIL_fake_script() -- TextButton.Script 
+coroutine.wrap(GWDPHS_fake_script)()
+local function QKDAZZU_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	function click()
@@ -592,8 +592,8 @@ local function VDIL_fake_script() -- TextButton.Script
 	end
 	script.Parent.MouseButton1Click:Connect(click)
 end
-coroutine.wrap(VDIL_fake_script)()
-local function OARRBGC_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QKDAZZU_fake_script)()
+local function HMGVKNW_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -602,8 +602,8 @@ local function OARRBGC_fake_script() -- TextButton_2.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(OARRBGC_fake_script)()
-local function RMZTUR_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(HMGVKNW_fake_script)()
+local function DSUUH_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -612,8 +612,8 @@ local function RMZTUR_fake_script() -- TextButton_3.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(RMZTUR_fake_script)()
-local function SAJECP_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(DSUUH_fake_script)()
+local function UHZSHR_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local player = game.Players.LocalPlayer
@@ -624,24 +624,24 @@ local function SAJECP_fake_script() -- TextButton_4.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = false
 	end)
 end
-coroutine.wrap(SAJECP_fake_script)()
-local function DTGCPJN_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(UHZSHR_fake_script)()
+local function XBNNG_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.Text = player.Name
 end
-coroutine.wrap(DTGCPJN_fake_script)()
-local function BHBWUO_fake_script() -- PlayerCounter.LocalScript 
+coroutine.wrap(XBNNG_fake_script)()
+local function ZVJVOXE_fake_script() -- PlayerCounter.LocalScript 
 	local script = Instance.new('LocalScript', PlayerCounter)
 
 	while wait() do
 		script.Parent.Text = "Players In Server: "..#game.Players:GetChildren()
 	end
 end
-coroutine.wrap(BHBWUO_fake_script)()
-local function OOMKDOZ_fake_script() -- Setting.LocalScript 
+coroutine.wrap(ZVJVOXE_fake_script)()
+local function RIGS_fake_script() -- Setting.LocalScript 
 	local script = Instance.new('LocalScript', Setting)
 
 	local player = game.Players.LocalPlayer
@@ -651,8 +651,8 @@ local function OOMKDOZ_fake_script() -- Setting.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = false
 	end)
 end
-coroutine.wrap(OOMKDOZ_fake_script)()
-local function RCXQHF_fake_script() -- Close.LocalScript 
+coroutine.wrap(RIGS_fake_script)()
+local function RRQKNQD_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local player = game.Players.LocalPlayer
@@ -662,8 +662,8 @@ local function RCXQHF_fake_script() -- Close.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = true
 	end)
 end
-coroutine.wrap(RCXQHF_fake_script)()
-local function ISTE_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(RRQKNQD_fake_script)()
+local function UMWRMW_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local player = game.Players.LocalPlayer
@@ -672,8 +672,8 @@ local function ISTE_fake_script() -- Close_2.LocalScript
 		player.PlayerGui.NepGui.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(ISTE_fake_script)()
-local function IHOJDO_fake_script() -- Close_2.Script 
+coroutine.wrap(UMWRMW_fake_script)()
+local function NHRR_fake_script() -- Close_2.Script 
 	local script = Instance.new('Script', Close_2)
 
 	function click()
@@ -695,15 +695,15 @@ local function IHOJDO_fake_script() -- Close_2.Script
 	end
 	script.Parent.MouseButton1Click:Connect(click)
 end
-coroutine.wrap(IHOJDO_fake_script)()
-local function XVBGB_fake_script() -- Main.LocalScript 
+coroutine.wrap(NHRR_fake_script)()
+local function LYNNOM_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(XVBGB_fake_script)()
-local function NIJD_fake_script() -- Script.LocalScript 
+coroutine.wrap(LYNNOM_fake_script)()
+local function JFQQ_fake_script() -- Script.LocalScript 
 	local script = Instance.new('LocalScript', Script)
 
 	local button = script.Parent
@@ -711,8 +711,8 @@ local function NIJD_fake_script() -- Script.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(NIJD_fake_script)()
-local function XOKS_fake_script() -- Script_2.LocalScript 
+coroutine.wrap(JFQQ_fake_script)()
+local function LJXKNP_fake_script() -- Script_2.LocalScript 
 	local script = Instance.new('LocalScript', Script_2)
 
 	local button = script.Parent
@@ -720,8 +720,8 @@ local function XOKS_fake_script() -- Script_2.LocalScript
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
 	end)
 end
-coroutine.wrap(XOKS_fake_script)()
-local function RKMA_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(LJXKNP_fake_script)()
+local function UHFFER_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local player = game.Players.LocalPlayer
@@ -732,8 +732,8 @@ local function RKMA_fake_script() -- Close_3.LocalScript
 		player.PlayerGui.NepGui.Main.UPDATING.Visible = true
 	end)
 end
-coroutine.wrap(RKMA_fake_script)()
-local function HQBQDLA_fake_script() -- ScriptBlox.LocalScript 
+coroutine.wrap(UHFFER_fake_script)()
+local function DBWITNH_fake_script() -- ScriptBlox.LocalScript 
 	local script = Instance.new('LocalScript', ScriptBlox)
 
 	local button = script.Parent
@@ -741,4 +741,4 @@ local function HQBQDLA_fake_script() -- ScriptBlox.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()	
 	end)
 end
-coroutine.wrap(HQBQDLA_fake_script)()
+coroutine.wrap(DBWITNH_fake_script)()
